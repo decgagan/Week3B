@@ -12,14 +12,35 @@ namespace Week3B
         {
             GenStack<int> 
             intStack=new GenStack<int>();
-            intStack.Push(1);
-            intStack.Push(2);
-            intStack.Push(3);
+            for(int i= 1; i <= 11; i++)
+            {
+                try
+                {
+                    intStack.Push(i);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+               
+            }
+            for(int i= 1;i <= 1; i++)
+            {
+                try
+                {
+                    intStack.Pop();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+               
+            }
 
-            Console.WriteLine(intStack.Pop()); // Output: 3
-            Console.WriteLine(intStack.Pop()); // Output: 2
-            Console.WriteLine(intStack.Pop()); // Output: 1
+          
             Console.ReadKey();
+
+
         }
     }
 }

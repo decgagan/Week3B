@@ -24,19 +24,32 @@ namespace Week3B
 
         public void Push(T value)
         {
-
-            array[top++] = value;
+            if (!IsFull())
+            {
+                array[top++] = value;
+            }
+            else
+            {
+                throw new InvalidOperationException("Stack is full");
+            }
 
         }
         public T Pop()
         {
-            return array[--top];
+            if(!IsEmpty())
+            {
+                return array[--top];
+            }
+            else
+            {
+                throw new InvalidOperationException("Stack is empty");
+            }
         }
         public bool IsEmpty()
         {
             return top == 0;
         }
-        public bool isFull()
+        public bool IsFull()
         {
             return top == maxSize;
         }
