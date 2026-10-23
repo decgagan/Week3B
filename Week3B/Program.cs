@@ -24,11 +24,11 @@ namespace Week3B
                 }
                
             }
-            for(int i= 1;i <= 1; i++)
+            for(int i= 1;i <= 11; i++)
             {
                 try
                 {
-                    intStack.Pop();
+                    Console.WriteLine(intStack.Pop());
                 }
                 catch (Exception ex)
                 {
