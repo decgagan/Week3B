@@ -10,8 +10,16 @@ namespace Week3B
     {
         static void Main(string[] args)
         {
-            GenStack<int> intStack
-            intStack.Push(1);1
+            GenStack<int> 
+            intStack=new GenStack<int>();
+            intStack.Push(1);
+            intStack.Push(2);
+            intStack.Push(3);
+
+            Console.WriteLine(intStack.Pop()); // Output: 3
+            Console.WriteLine(intStack.Pop()); // Output: 2
+            Console.WriteLine(intStack.Pop()); // Output: 1
+            Console.ReadKey();
         }
     }
 }

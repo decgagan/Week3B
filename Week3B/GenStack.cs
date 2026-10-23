@@ -32,6 +32,14 @@ namespace Week3B
         {
             return array[--top];
         }
+        public bool IsEmpty()
+        {
+            return top == 0;
+        }
+        public bool isFull()
+        {
+            return top == maxSize;
+        }
 
     }
 }
