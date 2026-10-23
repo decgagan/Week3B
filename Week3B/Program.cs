@@ -34,10 +34,16 @@ namespace Week3B
                 {
                     Console.WriteLine(ex.Message);
                 }
+
+               
                
             }
 
-          
+          GenStack<string> stringStack = new GenStack<string>();
+            stringStack.Push("apple");  
+            stringStack.Push("banana");
+            stringStack.Push("cherry");
+            Console.WriteLine(stringStack.Pop());
             Console.ReadKey();
 
 
